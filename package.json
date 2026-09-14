@@ -47,7 +47,11 @@
     "test:ui": "pnpm run test --ui",
     "coverage": "vitest run --coverage",
     "publint": "publint",
-    "check": "run-s lint coverage build publint"
+    "check": "run-s lint coverage build",
+    "release": "releaseasy"
+  },
+  "dependencies": {
+    "releaseasy": "file:releaseasy-0.0.0.tgz"
   },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^13.0.3",

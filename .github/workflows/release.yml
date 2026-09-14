@@ -35,7 +35,7 @@ jobs:
         run: pnpm build
 
       - name: Generate a changelog
-        run: pnpm exec releaseasy changelog -vv -o --latest
+        run: pnpm releaseasy changelog -vv -o --latest
 
       - name: Github Release
         uses: softprops/action-gh-release@v2
