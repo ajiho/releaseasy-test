@@ -34,11 +34,14 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Generate a changelog
-        run: pnpm releaseasy changelog -vv -o --latest
+      - name: Publish to npm
+        run: pnpm publish --no-git-checks
+
+      - name: Generate changelog for the latest release
+        run: pnpm releaseasy changelog -vv -o CHANGELOG-LATEST.md --latest
 
       - name: Github Release
         uses: softprops/action-gh-release@v2
         with:
-          body_path: CHANGELOG.md
+          body_path: CHANGELOG-LATEST.md
           prerelease: ${{ contains(github.ref_name, '-') }}
