@@ -6,8 +6,8 @@ on:
       - "v*"
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: write # 使能够发布GitHub版本
+  id-token: write # OIDC 发布所必须的
 
 jobs:
   build:
