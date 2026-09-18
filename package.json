@@ -30,7 +30,6 @@
       "default": "./dist/index.js"
     }
   },
-  "publishConfig": {},
   "scripts": {
     "prepare": "simple-git-hooks",
     "fmt": "oxfmt",
