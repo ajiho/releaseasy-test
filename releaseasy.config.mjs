@@ -2,10 +2,10 @@
 export default {
   increments: [
     "major",
-    "premajor",
     "minor",
-    "preminor",
     "patch",
+    "premajor",
+    "preminor",
     "prepatch",
     "prerelease",
     "release",
