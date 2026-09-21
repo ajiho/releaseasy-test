@@ -20,5 +20,6 @@ export default {
   },
   hooks: {
     "before:init": ["pnpm test", "pnpm coverage"],
+    "after:release": "echo Successfully released ${name} v${version} with tag ${tagName}.",
   },
 };
