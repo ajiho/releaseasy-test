@@ -1,6 +1,6 @@
 {
   "name": "releaseasy-test",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "A modern starter template for building JavaScript libraries.",
   "keywords": [
     "javascript",
@@ -88,5 +88,8 @@
         "args": "--tag ${version}"
       }
     }
+  },
+  "publishConfig": {
+    "tag": "latest"
   }
 }
