@@ -19,6 +19,6 @@ export default {
     },
   },
   hooks: {
-    "before:init": "pnpm test",
+    "before:init": ["pnpm test", "pnpm coverage"],
   },
 };
