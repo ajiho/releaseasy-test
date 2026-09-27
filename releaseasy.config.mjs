@@ -18,8 +18,8 @@ export default {
       args: "--tag ${version}",
     },
   },
-  hooks: {
-    "before:init": ["pnpm lint", "pnpm coverage"],
-    "after:release": "echo Successfully released ${name} v${version} with tag ${tagName}.",
-  },
+  // hooks: {
+  //   "before:init": ["pnpm lint", "pnpm coverage"],
+  //   "after:release": "echo Successfully released ${name} v${version} with tag ${tagName}.",
+  // },
 };
