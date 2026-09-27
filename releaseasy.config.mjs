@@ -8,7 +8,7 @@ export default {
     "preminor",
     "prepatch",
     "prerelease",
-    // "release",
+    "release",
   ],
   distTags: ["latest", "next"],
   git: {
